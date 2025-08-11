@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 移动设备适配 -->
+  <title>学日语 | 初学者日语课程招生</title>
+  <!-- 网页关键词 -->
+  <meta name="keywords" content="日语学习, 日语入门, 日语培训, 日语线上课程, JLPT考试, 日本老师，日语课程,日本語教室,Learn Japanese,日语在线,Japanese online class,中文日语教学">
+  <!-- 多语言描述 -->
+  <meta name="description" content="语零基础到高级全程线上授课，日本资深教师教学，支持微信联系，随时随地学日语，提供日语课程，支持中文、日文和英文用户，线上教学，母语中文教师授课。">
+  <style>
+    body {
+      /*background-image: url('sakura_bg.jpg');  樱花背景图 */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: "Microsoft YaHei", sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .sentence {
+      background-color: rgba(255, 255, 255, 0.85); /* 半透明白底 */
+      width: 80%;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #c71585;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #ffb6c1;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #ff69b4;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .qr-code img { width: 100px; height: 100px; border: 1px solid #ddd; border-radius: 8px; transition: transform 0.3s; }
+    .qr-code img:hover { transform: scale(1.2); }
+  </style>
+</head>
+<body>
+<header>
+    <div class="cn">
+        <h1>🌸 欢迎来到我们的日语教室 🌸</h1>
+    </div>
+    <div class="en" style="display: none;">
+        <h1>🌸 Welcome to the Japanese Language Classroom 🌸</h1>
+    </div>
+      
+</header>
+  <div class="sentence">
+      <button class="button" onclick="toggleLanguage()">切换语言</button>
+    <div class="cn">
+        <h2>👩‍🏫  日语教室介绍</h2>
+        <p>本教室提供从零基础到中级的日语学习课程。</p>
+        <p>采用《大家的日本语》作为教材，系统学习五十音、语法、日常会话。</p>
+        <p>在线学习，初次试听免费！</p>
+        <p>授课对象：初学者、中国人、日语爱好者</p>
+     </div>
+     <div class="cn">
+        <h2>✉ 报名或咨询</h2>
+        <p>请通过以下邮箱联系我们。</p>
+        <p class="email">senseiteacher2025@gmail.com</p>
+        <div class="qr-code">
+          <img src="weixin_erweima_sensei.jpg" alt="微信二维码">
+        </div>
+      </div>
+      <div class="cn">
+        <h2>🔗 关联链接</h2>
+        <a href="registrationInquiry_cn.html">▶ 报名入力情报参照</a>
+        <a href="lesson_cn.html">▶ 上课内容</a>
+      </div>
+
+
+      <div class="en" style="display: none;">      
+        <h2>👩‍🏫  Japanese Language Class Introduction</h2>
+        <p>We offer Japanese courses from absolute beginner to intermediate level.</p>
+        <p>Our curriculum uses the textbook “Minna no Nihongo” to systematically study kana, grammar, and daily conversation.</p>
+        <p>Online learning, and the first trial lesson is free!</p>
+        <p>Recommended for beginners, Chinese learners, and anyone interested in Japanese.</p>
+      </div>
+      <div class="en" style="display: none;">
+        <h2>✉ Registration or Inquiry</h2>
+        <p>Please contact us via the email address below.</p>
+        <p class="email">senseiteacher2025@gmail.com</p>
+        <div class="qr-code">
+          <img src="weixin_erweima_sensei.jpg" alt="微信二维码">
+        </div>
+      </div>
+      <div class="en" style="display: none;">
+        <h2>🔗 Related Links</h2>
+        <a href="registrationInquiry_en.html">▶ Registration Information Reference</a>
+        <a href="lesson_en.html">▶ Lesson Details</a>
+      </div>
+  </div>
+
+
+
+  <script>
+    let isChinese = true;
+
+    function toggleLanguage() {
+      isChinese = !isChinese;
+
+      const enList = document.querySelectorAll('.en');
+      const cnList = document.querySelectorAll('.cn');
+
+      if (isChinese) {
+        enList.forEach(el => el.style.display = 'none');
+        cnList.forEach(el => el.style.display = 'block');
+      } else {
+        enList.forEach(el => el.style.display = 'block');
+        cnList.forEach(el => el.style.display = 'none');
+      }
+    }
+  </script>
+
+  <footer>
+    © 2025 Japanese class
+  </footer>
+</body>
+</html>
